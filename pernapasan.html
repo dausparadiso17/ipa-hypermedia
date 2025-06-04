@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistem Pernapasan</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h2>Sistem Pernapasan pada Manusia</h2>
+  </header>
+
+  <main>
+    <section>
+      <p>Sistem pernapasan membantu tubuh mendapatkan oksigen dan mengeluarkan karbon dioksida.</p>
+      <img src="../assets/img/paru.png" alt="Anatomi Paru-paru" width="300px">
+    </section>
+
+    <section>
+      <h3>Simulasi Video</h3>
+      <video controls width="500">
+        <source src="../assets/video/pernapasan.mp4" type="video/mp4">
+        Maaf, browser Anda tidak mendukung pemutaran video.
+      </video>
+    </section>
+
+    <section>
+      <h3>Kuis Singkat</h3>
+      <button onclick="cekJawaban()">Apa fungsi alveolus?</button>
+      <p id="feedback"></p>
+    </section>
+  </main>
+
+  <script>
+    function cekJawaban() {
+      const feedback = document.getElementById("feedback");
+      feedback.innerHTML = "✅ Alveolus berfungsi sebagai tempat pertukaran gas O2 dan CO2.";
+    }
+  </script>
+</body>
+</html>
